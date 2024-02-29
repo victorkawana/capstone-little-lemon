@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,98 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navigation a {
+  color: black;
+  text-decoration: none;
+  padding: 6px 6px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Markazi Text', serif;
+}
+
+.navigation a:hover {
+  background-color: #FFE500;
+}
+
+.navigation a.active {
+  background-color: #FFE500;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 5px;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    padding: 10px;
+    }
+
+  .navigation a {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .navigation a:hover {
+    padding: 10px;
+  } 
+}
+
+.main-grid {
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #495E57;
+  margin-bottom: 50px;
+}
+
+.main-grid h1 {
+  color: #FFE500;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-family: 'Markazi Text', serif;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.main-grid h2 {
+  color: white;
+  padding-left: 40px;
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+  font-weight: normal;
+
+}
+
+.main-grid p {
+  color: white;
+  width: 50%;
+  padding-left: 40px;
+  padding-top: 40px;
+  font-family: 'Markazi Text', serif;
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+.main-grid button {
+  padding: 20px;
+  border-radius: 16px;
+  margin: 40px;
+  background-color: #F4CE14;
+  font-weight: bold;
+  font-family: 'Markazi Text', serif;
+  font-size: 18px;
+
 }
