@@ -1,4 +1,5 @@
 import React from "react";
+import mainImage from './assets/restauranfood.jpg'
 
 function Main() {
     return (
@@ -8,7 +9,7 @@ function Main() {
                 <h2>Chigago</h2>
                 <p>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
                 <button>Reserve a table</button>
-                <img src=""
+                <img className="main-image" src={mainImage} />
             </div>
         </main>
     )
