@@ -69,7 +69,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  margin: 5px;
+  margin: 10px;
   padding: 10px 20px;
 }
 
@@ -91,7 +91,7 @@
 
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto;
   background-color: #495E57;
   margin-bottom: 50px;
   align-items: start;
@@ -129,7 +129,7 @@
   font-size: 22px;
   font-weight: lighter;
   grid-column: 1;
-  width: 70%;
+  width: 60vw;
 
 }
 
@@ -150,10 +150,11 @@
 }
 
 .main-grid img {
+  display: flex;
+  position: absolute;
   height: 400px;
   width: 300px;
-  grid-column: 3;
-  justify-self: center;
-  align-self: center;
-  padding-right: 100px;
+  right: 25vh;
+  top: 20vh;
+  border-radius: 16px;
 }

@@ -1,5 +1,8 @@
 import React from "react";
-import mainImage from './assets/restauranfood.jpg'
+import mainImage from './assets/restauranfood.jpg';
+import {Routes , Route, Link} from  'react-router-dom';
+import BookingPage from './BookingPage';
+
 
 function Main() {
     return (
@@ -11,6 +14,9 @@ function Main() {
                 <button>Reserve a table</button>
                 <img className="main-image" src={mainImage} />
             </div>
+            <Routes>
+                <Route path="/booking" element={<BookingPage />}></Route>
+            </Routes>
         </main>
     )
 }
