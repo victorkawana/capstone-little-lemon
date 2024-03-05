@@ -86,7 +86,7 @@
 
   .navigation a:hover {
     padding: 10px;
-  } 
+  }
 }
 
 .main-grid {
@@ -99,8 +99,6 @@
   grid-template-rows: auto;
 
 }
-
-
 
 .main-grid h1 {
   color: #FFE500;
@@ -152,9 +150,32 @@
 .main-grid img {
   display: flex;
   position: absolute;
-  height: 400px;
-  width: 300px;
+  height: 350px;
+  width: 250px;
   right: 25vh;
-  top: 20vh;
+  top: 15vh;
   border-radius: 16px;
+}
+
+.week-specials-title {
+  padding-left: 40px;
+  padding-bottom: 40px;
+  font-family: 'Karla', serif;
+  font-weight: bold;
+}
+
+.week-specials {
+  display: flex;
+  margin: 30px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.week-specials-1 {
+  background-color: #F4CE14;
+  padding: 10px 20px;
+  border-radius: 5px;
+
 }
