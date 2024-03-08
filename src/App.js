@@ -5,32 +5,20 @@ import Main from './Main';
 import Footer from './Footer';
 import Specials from './Specials';
 import Chicago from './Chicago';
+import Testimonials from './CustomersSay'
 import {Routes , Route} from  'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react';
-import {
-  ChakraBaseProvider,
-  extendBaseTheme,
-  theme as chakraTheme,
-} from '@chakra-ui/react'
-
-const { Button } = chakraTheme.components
-
-const theme = extendBaseTheme({
-  components: {
-    Button,
-  },
-})
 
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <>
       <Header />
       <Nav />
       <Main />
       <Specials />
+      <Testimonials />
       <Footer />
-    </ChakraProvider>
+    </>
   );
 }
 
