@@ -1,37 +1,38 @@
 import React from "react";
 import "./App.css";
-import imageAvatar from "./assets/avatar.svg"
+import iconAvatar from "./assets/batman.png"
+
 
 function Testimonials() {
     return (
-        <>
+        <div className="testimonials-section">
             <div className="testimonials-title">
-                <h2>Test</h2>
+                <h2>Testimonials</h2>
             </div>
             <div className="testimonials-group">
                 <div className="testimonal-1">
-                    <h6>John</h6>
-                    <img src="{avatarImage}"></img>
-                    <p className="rating">5 star</p>
+                    <h3>Bruce</h3>
+                    <img src={iconAvatar}/>
+                    <p className="rating">5 ★</p>
                     <p className="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum orci sit amet odio triste.</p>
                 </div>
 
                 <div className="testimonal-2">
-                    <h6>John</h6>
-                    <img></img>
-                    <p className="rating">5 star</p>
+                    <h3>Bruce</h3>
+                    <img src={iconAvatar}/>
+                    <p className="rating">5 ★</p>
                     <p className="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum orci sit amet odio triste.</p>
                 </div>
 
                 <div className="testimonal-3">
-                    <h6>John</h6>
-                    <img></img>
-                    <p className="rating">5 star</p>
+                    <h3>Bruce</h3>
+                    <img src={iconAvatar}/>
+                    <p className="rating">5 ★</p>
                     <p className="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum orci sit amet odio triste.</p>
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }
 

@@ -17,6 +17,7 @@ function App() {
       <Main />
       <Specials />
       <Testimonials />
+      <Chicago />
       <Footer />
     </>
   );
